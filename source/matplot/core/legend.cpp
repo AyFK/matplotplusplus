@@ -18,7 +18,7 @@ namespace matplot {
         : strings_(names), parent_(parent) {
         if (names.empty() && !parent_->children().empty()) {
             for (size_t i = 0; i < parent_->children().size(); ++i) {
-                strings_.emplace_back("data" + num2str(i + 1));
+                //strings_.emplace_back("data" + num2str(i + 1));
             }
         }
     }
